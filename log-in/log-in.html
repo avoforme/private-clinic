@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Crimson+Pro:wght@500&family=Roboto&family=Rubik:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Roboto&family=Rubik:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Rubik:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập | AVOPT</title>
+    <link rel="icon" href="../d922bf5ac1ce69a468e325f9893f4266.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../log-in/log-in.css" />
+  </head>
+  <body>
+    <div id="side-tool">
+      <i onclick="myFunction()" id="home-btn" class="fas fa-bars"></i>
+
+      <div id="side-tool-option-wrapper">
+        <a href="../home/home.html" id='side-tool-home' class="side-tool-option">Home</a>
+        <a href='../info/info.html' id='side-tool-info' class="side-tool-option" >
+          Chúng tôi
+        </a>
+        <a href='../schedule-not-log-in/schedule-not-log-in.html' id='side-tool-schedule' class="side-tool-option">
+          Hẹn lịch
+        </a>
+        <div id='side-tool-log-in' >
+          Đăng nhập
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngan cach giua side tool va main  -->
+
+    <div id="main-side">
+      <div id="main-side-top">
+        <h1 id="main-side-top-title">Phòng khám AVOPT</h1>
+
+        <!-- <div id="main-side-top-option">
+          <a href="../home/home.html" id="home">Home</a>
+          <i id="home-icon" class="fad fa-home"></i>
+        </div> -->
+      </div>
+      <div id='main-side-content'>
+        <div id='left-side'>
+          <div id='left-side-title'>
+            Log in
+          </div>
+          <div id='left-side-text'>Đăng nhập để truy cập vào những dịch vụ!</div>
+          <img id="left-side-img" src="../log-in/pic/c32d9bdf-5215-46b5-b307-21cffb977bf4.png" alt="">
+        </div>
+        <div id="log-in">
+            <h1 id="log-in-title">Welcome</h1>
+            <form id="log-in-form">
+              <p id='info-check'>Hãy kiểm tra lại thông tin!</p>
+              <div class="info-holder">
+                <input
+                  id="username"
+                  class="info"
+                  type="text"
+                  placeholder="Username"
+                />
+                <br />
+              </div>
+              <div class="info-holder">
+                <input
+                  id="password"
+                  class="info"
+                  type="password"
+                  placeholder="Password"
+                />
+                <br />
+              </div>
+              <div id="log-in-btn">Log in</div>
+              <div id='sign-up-container'>
+                <div id='sign-up-text'>Chưa có tài khoản?</div>
+                <a id='sign-up-link' href="../sign-up/sign-up.html">Tạo ngay!</a>
+              </div>
+            </form>
+          </div>
+      </div>
+      
+    </div>
+
+
+    <!-- Script o duoi -->
+    <script src="../log-in/log-in.js"></script>
+  </body>
+</html>

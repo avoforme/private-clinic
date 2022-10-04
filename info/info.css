@@ -1,0 +1,397 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;    
+    list-style: none;
+
+}
+body{
+    /* background-color: #dfeee9; */
+    background: rgb(240, 239, 239);
+}
+
+#main-side{
+    
+    right: 0;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    padding-bottom: 5%;
+    transition: .4s width;
+}
+#main-side-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    border-radius: 10px;
+    margin: 2%;
+}
+#main-side-top-title{
+    font-size: 50px;
+    padding: 2% ;
+    border-right: black solid;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+  
+}
+#main-side-top-option{
+    color: white;
+    display: flex;
+    border: solid gray 1px;
+    padding: 1%;
+    border-radius: 50%;
+    background-color: #334257;
+    height: fit-content; 
+    cursor: pointer;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
+    
+
+}
+#main-side-top-option:hover{
+    border: solid gray 1px;
+    border-radius: 50px;
+}
+
+#side-tool{
+    width: 15%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    color: white;
+    transition: .4s width;
+}
+
+#home-btn {
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    cursor: pointer;
+}
+#side-tool-option-wrapper{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width: 80%;
+    margin-top: 5%;
+    top: 100px;
+    right: 5px;
+    cursor: pointer;
+}
+#side-tool-home{
+    margin-bottom: 20px;
+    width: fit-content;
+    transition: 0.3s;
+    display: block;
+    /* color: gray;
+    text-decoration: none; */
+}
+#side-tool-info{
+  margin-bottom: 20px;
+    width: fit-content;
+    /* transition: 0.3s; */
+    display: block;
+    color: gray;
+    text-decoration: none;
+}
+.side-tool-option{
+    margin-bottom: 20px;
+    width: fit-content;
+    transition: 0.3s;
+    display: block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.side-tool-option::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height:2px;
+    background: white;
+    bottom:-5px;
+    left:0;
+    transform: scaleX(0);
+    transform-origin: 100%;
+    transition: .2s transform;
+}
+.side-tool-option:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0%;
+}
+
+#main-side-body-top{
+  background: rgb(240, 239, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+#main-body-top-left{
+  background: rgb(240, 239, 239);
+    display: flex;
+    /* justify-content: space-around; */
+    height: 70%;
+    margin: 2%;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin-right: 6%;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#main-body-top-right{
+    width: 20%;
+    position: fixed;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.service-block{
+   color:rgb(0, 0, 0);
+
+    width: 50%;
+    display: inline-block;
+    padding: 2%;
+    /* height: fit-content;
+    width: fit-content; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+   
+}
+.service-title{
+    margin: 20px 0px;
+    font-family: 'Andada Pro', serif;
+}
+#service-1{
+    background-color: rgb(86, 173, 160);
+  
+}
+#title-1, #title-2{
+  font-size: 20px;
+}
+#service-1:hover {
+  transform: scale(1.02);
+  box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#service-2:hover {
+  transform: scale(1.02);
+  box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#service-2{
+    background-color: #6ec3e7;
+
+    /* margin-left: 30px; */
+}
+#service-2-text{
+    padding-bottom: 15px;
+    padding: 8px
+}
+
+#main-side-body-bottom{
+  background-color:  rgb(134, 134, 134);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 3%;
+  
+}
+#rating{
+  background-color: #363636;
+  box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin: 2%;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  width: 70%;
+
+}
+#rating-right{
+  width: 75%;
+}
+#intro{
+  background-color: #363636;
+  box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin: 2%;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  width: 70%;
+}
+#intro-text{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 85%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 2%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 0%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;    
+    list-style: none;
+
+}
+body{
+    /* background-color: #dfeee9; */
+    background: rgb(240, 239, 239);
+}
+
+#main-side{
+    
+    right: 0;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    padding-bottom: 5%;
+    transition: .4s width;
+}

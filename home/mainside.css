@@ -1,0 +1,429 @@
+#main-side-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    border-radius: 10px;
+    margin: 2%;
+}
+#main-side-top-title{
+    font-size: 50px;
+    padding: 2% ;
+    border-right: black solid;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+  
+}
+#main-side-top-option{
+    color: white;
+    display: flex;
+    border: solid gray 1px;
+    padding: 1%;
+    border-radius: 50%;
+    background-color: #6cbace;
+    height: fit-content; 
+    cursor: pointer;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
+    padding: 2%;
+    margin-top: 10px;
+    
+
+}
+#main-side-top-option:hover{
+    border: solid gray 1px;
+    transform: scale(1.05);
+    
+}
+#log-in{
+  font-family: 'Andada Pro', serif;
+  color: rgb(0, 36, 77);
+  text-decoration: none;
+}
+#log-in-icon{
+    margin-left: 5px;
+}
+#main-side-body{
+
+    border-radius: 10px;
+    margin: 2%;
+    height: 100%;
+    display: flex;
+    padding: 2%;
+    margin-bottom: 10%;
+
+}
+#main-side-body-left{
+    width: 70%;
+    margin-right: 2%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+#schedule{
+    background-color: #285064;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+
+}
+
+#schedule-text-1{
+  
+    border: none;
+    font-size: 20px;
+    padding: 2%;
+    color: whitesmoke;
+    border-left: solid rgb(212, 199, 210);
+    transition: 0.4s;
+    cursor: context-menu;
+}
+#schedule-text-1:hover{
+    background-color: rgb(65, 89, 131);
+}
+#schedule-text-1-title{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+}
+
+#schedule-text-2{
+    border: none;
+    font-family: 'Lato', sans-serif;
+    padding: 2%;
+    border-left: solid rgb(212, 199, 210)
+   
+}
+#schedule-text-2-actual{
+    border: white solid 0.5px;
+    background-color: white;
+    border-radius:50px;
+    padding: 20%;
+    width: fit-content;
+}
+#schedule-text-3{
+    text-decoration: none;
+    color: whitesmoke;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+    padding: 2%;
+    border-left: solid rgb(212, 199, 210);
+    transition: 0.4s;
+    cursor: pointer;
+}
+#schedule-text-3:hover{
+    background-color: rgb(65, 89, 131);
+}
+#schedule-img{
+    width: 30%;
+    height: fit-content;
+    border-radius: 40px;
+}
+#service{
+    display: flex;
+    height: 70%;
+    margin: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+.service-block{
+    background-color:white;
+    border-radius: 10px;
+    width: 30%;
+    margin: 1.5%;
+    padding: 2%;
+    /* height: fit-content;
+    width: fit-content; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-title{
+    margin: 20px 0px;
+    font-family: 'Andada Pro', serif;
+}
+#service-1{
+    background-color: #ffffff;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#service-1-img, #service-2-img, #service-3-img{
+    width: 80%;
+    height: 50%;
+    object-fit: cover;    
+}
+#service-2{
+    background-color: #ffffff;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#service-2-text{
+    padding-bottom: 15px;
+}
+#service-3{
+    background-color: #ffffff;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.part-2 {
+    margin: 2%;
+    height: 450px;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 4%;
+    width: 95%;
+    background-color: #F6F6F6;
+  
+  }
+  
+  .part-2-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  #meeting-title{
+    font-size: 30px;
+  }
+  .meeting-time{
+    margin-right: 20px;
+  }
+  .meeting-info{
+    margin-right: 20px;
+  }
+  #pre-click{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%
+    
+  }
+  #pre-click-text{
+    width: 50%;
+    background-color: #70909c;
+    padding: 5%;
+    width: fit-content;
+    color: white;
+    
+  }
+  #pre-click-text-title{
+    font-family: 'Andada Pro', serif;
+    margin-top: 10%;
+    font-size: 25px;
+    margin-bottom: 5%;
+  }
+  #pre-click-img{
+    max-width: 50%;
+    height: 300px;
+  }
+  .part-2-body-no-customer{
+    background-color: #285064;
+    color: #dfebed;
+    font-family: 'Roboto', sans-serif;
+    height: fit-content;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 6%;
+    height:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .part-2-body {
+    height:80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .part-2-body-clicked{
+    height:80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  
+  .part-2-body-song {
+    background-color: #70909c;
+    width: 100%;
+    margin-bottom: 2%;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 20px 0 rgba(108, 134, 221, 0.19);
+  }
+  .part-2-body-song-title {
+  
+    background-color: #285064;
+    width: 100%;
+    margin-bottom: 2%;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 20px 0 rgba(108, 134, 221, 0.19);
+  }
+  
+  .song-info{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #dfebed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+  }
+  .song-info-title{
+ 
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+  }
+  .meeting-info{
+   
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+  
+#main-side-body-right{
+    color: white;
+    width: 30%;
+    border-radius: 10px;
+    height: fit-content;
+    margin-top: 1.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .calendar {
+    font-family: 'Roboto', sans-serif;
+    background: #5b7681;
+    border-radius: 4px;
+    margin-bottom: 15%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    height: 501px;
+    perspective: 1000;
+    transition: .9s;
+    transform-style: preserve-3d;
+    width: 100%;
+  }
+  
+
+  
+  .current-date {
+    border-bottom: 1px solid rgba(73, 114, 133, .6);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+  }
+  
+  .current-date h1 {
+    color: #dfebed;
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+  
+  .week-days {
+    color: #dfebed;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 30px 40px;
+  }
+  
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .weeks {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  
+  .weeks div {
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 300;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .last-month {
+    opacity: .3;
+  }
+  
+  .weeks span {
+    padding: 10px;
+  }
+  
+  .weeks span.date {
+    cursor: pointer;
+  }
+  .weeks span.active {
+    background: #1b5047;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .event {
+    position: relative;
+  }
+  
+  .event:after {
+    content: '•';
+    color: #5baf93;
+    font-size: 1.4em;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+  }
+  
+#below-calender{
+  font-family: 'Roboto', sans-serif;
+    background-color: #285064;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10%;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    margin-bottom: 15%;
+}
+
+#profile-title{
+    margin: 20px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+#profile-img{
+    width: 70%;
+    border-radius: 40px;
+    object-fit: cover;
+    background-color: #5f8d8d;
+}
+

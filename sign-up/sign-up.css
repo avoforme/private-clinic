@@ -1,0 +1,249 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    /* background-color: #dfeee9; */
+    background: rgb(240, 239, 239);
+}
+
+#main-side{
+    right: 0;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    padding-bottom: 5%;
+    transition: .4s width;
+}
+
+#main-side-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+#main-side-top-title {
+    font-size: 50px;
+    padding: 2%;
+    border-right: black solid;
+    font-family: 'Libre Baskerville', serif;
+    /* background-color: rgb(202, 223, 223); */
+}
+
+#main-side-top-option {
+    color: white;
+    display: flex;
+    border: solid gray 1px;
+    padding: 1%;
+    border-radius: 50%;
+    background-color: #334257;
+    height: fit-content;
+    cursor: pointer;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
+}
+
+#home {
+    color: white;
+    text-decoration: none;
+}
+
+#main-side-top-option:hover {
+    border: solid gray 1px;
+    border-radius: 50px;
+}
+
+#main-side-content {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-icon {
+    margin-left: 5px;
+}
+
+#side-tool {
+    width: 15%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    color: white;
+    transition: .4s width;
+}
+
+#home-btn {
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#side-tool-option-wrapper {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width: 80%;
+    margin-top: 5%;
+    top: 100px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#side-tool-log-in {
+    margin-bottom: 20px;
+    width: fit-content;
+    transition: 0.3s;
+    display: block;
+    color: gray;
+    text-decoration: none;
+}
+
+.side-tool-option {
+    margin-bottom: 20px;
+    width: fit-content;
+    transition: 0.3s;
+    display: block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.side-tool-option::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    /* sao lai the nhi */
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 100%;
+    transition: .2s transform;
+}
+
+.side-tool-option:hover::after {
+    transform: scaleX(1);
+    transform-origin: 0%;
+}
+
+#left-side{
+ 
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5%;
+    background-color: #0e4d55;
+    background-size: cover;
+}
+#left-side-title{
+    margin-top: 10%;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 3%;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 2px 2px #8fbce6;
+}
+#left-side-text{
+    color: white;
+ 
+    font-family: 'Crimson Pro', serif;
+}
+#left-side-img{
+    position: relative;
+    width: 75%;
+    margin-top: 5px;
+}
+
+#sign-up{
+    border: dashed #0e4d55 10px;
+    width: 50%;
+    height: 70%;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5%;
+    background-color: #ffffff;
+    background-size: cover;
+}
+.sign-up-info, #sign-up-btn{
+    margin-bottom: 10%;
+}
+
+#sign-up-title{
+    color: #261C2C;
+    font-size: 50px;
+
+    margin-bottom: 5%;
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.sign-up-info{
+    border: none;
+    background-color: #d1eccf;
+    border-bottom: solid #3E2C41 2px;
+    width: 100%;
+    height: 30px;
+    padding: 5%;
+
+}
+.sign-up-info:focus{
+    border-bottom: solid whitesmoke 2px;
+}
+#sign-up-btn{
+
+    background-color: #bdf1ea;
+    width: 70%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s;
+    text-align: center;
+}
+#sign-up-btn:active{
+    transform: scale(0.9);
+}
+#sign-up-btn-big{
+
+    background-color: #bdf1ea;
+    width: 70%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s;
+    text-align: center;
+}
+#sign-up-btn-big:active{
+    transform: scale(0.9);
+}
+
+#log-in-text{
+    display: inline-block;
+}
+#log-in-link{
+    text-decoration: underline;
+    color: rgb(69, 98, 109);
+}

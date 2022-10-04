@@ -1,0 +1,212 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    /* background-color: #dfeee9; */
+    background: rgb(240, 239, 239);
+}
+
+#main-side {
+    right: 0;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    padding-bottom: 5%;
+    transition: .4s width;
+}
+
+#main-side-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+#main-side-top-title {
+    font-size: 50px;
+    padding: 2%;
+    border-right: black solid;
+    font-family: 'Libre Baskerville', serif;
+    /* background-color: rgb(202, 223, 223); */
+}
+
+#main-side-top-option {
+    color: white;
+    display: flex;
+    border: solid gray 1px;
+    padding: 1%;
+    border-radius: 50%;
+    background-color: #334257;
+    height: fit-content;
+    cursor: pointer;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
+}
+
+#home {
+    color: white;
+    text-decoration: none;
+}
+
+#main-side-top-option:hover {
+    border: solid gray 1px;
+    border-radius: 50px;
+}
+
+#main-side-content {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-icon {
+    margin-left: 5px;
+}
+
+#side-tool {
+    width: 15%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    color: white;
+    transition: .4s width;
+}
+
+#home-btn {
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#side-tool-option-wrapper {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width: 80%;
+    margin-top: 5%;
+    top: 100px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#side-tool-schedule {
+    margin-bottom: 20px;
+    width: fit-content;
+    transition: 0.3s;
+    display: block;
+    color: gray;
+    text-decoration: none;
+}
+
+.side-tool-option {
+    margin-bottom: 20px;
+    width: fit-content;
+    transition: 0.3s;
+    display: block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.side-tool-option::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    /* sao lai the nhi */
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 100%;
+    transition: .2s transform;
+}
+
+.side-tool-option:hover::after {
+    transform: scaleX(1);
+    transform-origin: 0%;
+}
+
+
+
+
+#log-in {
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: solid #476072 10px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    background-color: #c1dbe9;
+    background-size: cover;
+}
+
+
+#log-in-holder{
+    color: white;
+    display: flex;
+    border: solid gray 1px;
+    padding: 1%;
+    border-radius: 50%;
+    background-color: #334257;
+    height: fit-content; 
+    cursor: pointer;
+    box-shadow: 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
+    padding: 3%;
+}
+#log-in-btn{
+    color: white;
+    
+    text-decoration: none;
+    padding-right: 4px;
+}
+#log-in-holder:hover {
+    transform: scale(1.05);
+}
+
+
+#home-btn-small {
+    color: white;
+    font-size: 200%;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#home-btn-big {
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#log-in-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    color: white;
+    text-decoration: none;
+
+}
+#saying{
+    font-family: 'Roboto', sans-serif;
+}

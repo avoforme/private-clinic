@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hẹn lịch | AVOPT</title>
+    <link rel="icon" href="../d922bf5ac1ce69a468e325f9893f4266.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Crimson+Pro:wght@500&family=Roboto&family=Rubik:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Roboto&family=Rubik:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Rubik:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../schedule-loged-in/schedule.css" />
+  </head>
+  <body>
+    <div id="side-tool">
+      <i onclick="myFunction()" id="home-btn" class="fas fa-bars"></i>
+
+      <div id="side-tool-option-wrapper">
+        <a href="../home-loged-in/home-loged-in.html" id='side-tool-home' class="side-tool-option">Home</a>
+        <a href='../info-loged-in/info.html' id='side-tool-info' class="side-tool-option" >
+          Chúng tôi
+        </a>
+        <a id='side-tool-schedule'>
+          Hẹn lịch
+        </a>
+        <a href="../home/home.html" id='log-out' class="side-tool-option">
+          Đăng xuất
+        </a>
+      </div>
+    </div>
+    <!-- Ngan cach giua side tool va main  -->
+
+    <div id="main-side">
+      <div id="main-side-top">
+        <h1 id="main-side-top-title">Phòng khám AVOPT</h1>
+
+        <!-- <div id="main-side-top-option">
+            <a href="../home-loged-in/home-loged-in.html" id="home">Home</a>
+            <i id="home-icon" class="fad fa-home"></i>
+          </div> -->
+      </div>
+
+      <div id="main-side-content">
+        <div id='left-side'>
+          <div id='left-side-title'>
+            Appointment
+          </div>
+          <div id='left-side-text'>Hẹn lịch để tiết kiệm thời gian!</div>
+          <img id="left-side-img" src="../schedule-loged-in/pic/8ea39917-b944-46df-a5d1-2f3a2e5a7e36.png" alt="">
+        </div>
+        <div id="log-in">
+          <h1 id="log-in-title">Hẹn lịch</h1>
+          <form id="log-in-form">
+            <div class="info-holder">
+              <label for="name">Tên người đăng kí: </label>
+              <input
+                id="name"
+                class="info"
+                type="text"
+                placeholder="Họ và tên"
+              />
+              <br />
+            </div>
+            <div class="info-holder">
+              <label for="age">Tuổi: </label>
+              <input id="age" class="info" type="text" placeholder="Tuổi" />
+              <br />
+            </div>
+            <div class="info-holder">
+              <label for="date">Ngày hẹn: </label>
+              <input type="date" id="date" name="date" />
+            </div>
+
+            <div id="btn">Gửi</div>
+          </form>
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div id='modal-header-text'>Lịch của bạn đã được hẹn!</div>
+          </div>
+          <div class ='modal-body'>
+            <div class="modal-body-left">
+              <div id='noti-title'>
+                Một số điều cần </br> lưu ý khi đến
+              </div>
+              <div id='noti-text'> 
+                Khi đi, bệnh nhân nên mang theo mình chứng minh nhân dân và thẻ bảo hiểm y tế, cũng như giấy tờ khám bệnh. Nếu cần thay đổi thông tin, lịch hẹn hãy liên hệ ngay!
+              </div>
+            </div>
+            <div class="modal-body-right">
+              <img id='modal-pic' src="../schedule-loged-in/pic/undraw_Save_to_bookmarks_re_8ajf.png" alt="">
+              <p id="modal-text"></p>
+            </div>
+          </div>
+          
+          
+
+    
+        </div>
+      </div>
+    </div>
+
+    <!-- Script o duoi -->
+    <script src="../schedule-loged-in/schedule.js"></script>
+    <script src="../home/log-out.js"></script>
+  </body>
+</html>
