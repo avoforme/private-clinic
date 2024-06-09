@@ -17,7 +17,7 @@ function myFunction() {
 
 const DATA =[
     {
-        username:'hophuongthanh',
+        username:'avo',
         password:'1234'
     },
     {
